@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/gcc_compiled
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://gclarson.id.au
+  * I am gcc_compiled (https://keybase.io/gcc_compiled) on keybase.
+  * I have a public key ASAVyJbRLzaj2L7WwphihOVcDXPUEV4gCzfK3v3TVlOj0go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120fece0267c474742c2304447816760bc241ba609e462e41f5772712f87ede64ce0a",
+      "host": "keybase.io",
+      "kid": "012015c896d12f36a3d8bed6c2986284e55c0d73d4115e200b37cadefdd35653a3d20a",
+      "uid": "a3ca3da36a3af13e19d1744393aa8519",
+      "username": "gcc_compiled"
+    },
+    "merkle_root": {
+      "ctime": 1604639901,
+      "hash": "df08b5d8870d4cd032a7ce58f44a46758a6f30421622731f10304b12b77c1c349c69cf52fdd9005c0a01598fb562e88e173156204ce31771ef2561fed085cc34",
+      "hash_meta": "0778b400a2bc800e319445061f52d1483ec310b4ebfcc3742fc6ce45398b2425",
+      "seqno": 18036116
+    },
+    "service": {
+      "entropy": "PCXI1Hgek9ToO5E11yaamyhC",
+      "hostname": "gclarson.id.au",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1604639941,
+  "expire_in": 504576000,
+  "prev": "e872c58e3016fef3a43a78855d1708110f9e207956b666065e25f01d548e649e",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgFciW0S82o9i+1sKYYoTlXA1z1BFeIAs3yt7901ZTo9IKp3BheWxvYWTESpcCCcQg6HLFjjAW/vOkOniFXRcIEQ+eIHlWtmYGXiXwHVSOZJ7EIGVj6WL1Cb70G/uedZoIP/Dbmp3hE3tfyGrE85ZrQGHiAgHCo3NpZ8RA49jONglrni1H51LU++k4vykUmJ+nrvhAjCblcelbeTPNG+gjSIij65Y2pTSlrrRY2l0gvbfP8TpRnnA2JzrpA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEg6x9IbCFr8pF4ap+Ne4r7/7u16lOi0BJCjxZRGlDn9o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gcc_compiled
+
+==================================================================
