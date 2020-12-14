@@ -1,54 +1,138 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# --- Required options --- #
 
-title: Gareth Clarson || gcc_compiled
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "https://gclarson.id.au" # the subpath of your site, e.g. /blog
-url: "https://gclarson.id.au" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: gcc_compiled
-github_username:  gcc-compiled
+  # Name of website
+  title: The Cyber Necronomicon
 
-# Build settings
-theme: beautiful-jekyll-theme
-plugins:
-  - jekyll-feed
+  # Your name to show in the footer
+  author: Gareth Clarson (a.k.a gcc_compiled)
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  # --- List of links in the navigation bar --- #
+
+  navbar-links:
+    About Me: "aboutme"
+    Write Ups: "writeups"
+    CTF History: "ctfhistory"
+    Resources:
+      - Beautiful Jekyll: "https://beautifuljekyll.com"
+      - Learn markdown: "https://www.markdowntutorial.com/"
+
+  
+# --- Logo --- #
+
+  # Image to show in the navigation bar - works best with a square image
+  # Remove this parameter if you don't want an image in the navbar
+  avatar: "/assets/img/Avatars/Main-TV.gif"
+
+  # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
+  round-avatar: true
+
+  # If you want to have an image logo in the top-left corner instead of having the title of the website,
+  # then specify the following parameter
+  #title-img: /path/to/image
+
+
+# --- Footer social media links --- #
+
+  # Select the social network links that you want to show in the footer.
+  # Uncomment the links you want to show and add your information to each one.
+  social-network-links:
+    github: gcc-compiled
+    twitter: gcc_compiled
+    linkedin: gareth-clarson
+
+  # If you want to show a link to an RSS in the footer, add the site description here.
+  # If you don't want to show an RSS link, remove the following line.
+  rss-description: This website is a virtual proof that I'm awesome
+
+# --- General options --- #
+
+  # Select which social network share links to show in posts
+  share-links-active:
+    twitter: true
+    facebook: true
+    linkedin: true
+    vk: false
+
+  # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
+  excerpt_length: 50
+
+  # Whether or not to show an excerpt for every blog post in the feed page
+  feed_show_excerpt: true
+
+  # Whether or not to show a list of tags below each post preview in the feed page
+  feed_show_tags: true
+
+  # The keywords to associate with your website, for SEO purposes
+  keywords: "CTF,CaptureTheFlag,TryHackMe,HackTheBox,"
+
+# --- Colours / background image --- #
+
+  # Personalize the colours in your website. Colour values can be any valid CSS colour
+
+  navbar-col: "#272727"
+  navbar-text-col: "#FFFFFF"
+  navbar-border-col: "#FFFFFF"
+  page-col: "#1f1f1f"
+  text-col: "#FFFFFF"
+  link-col: "#48f308"
+  hover-col: "#48f308"
+  footer-col: "#272727"
+  footer-text-col: "#FFFFFF"
+  footer-link-col: "#494949"
+
+  # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
+  #mobile-theme-col: "#0085A1"
+
+  # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
+  #site-css: "/assets/css/beautifuljekyll.css"
+
+  # If you have common JavaScript files that should be included in every page, list them here
+  #site-js: "/assets/js/matrix.js"
+
+# --- Misc --- #
+
+  # Ruby Date Format to show dates of posts
+  date_format: "%B %-d, %Y"
+
+  # Output options (more information on Jekyll's site)
+  timezone: "Australia/Perth"
+  markdown: kramdown
+  highlighter: rouge
+  permalink: /:year-:month-:day-:title/
+  paginate: 5
+
+  kramdown:
+    input: GFM
+
+  # Default YAML values (more information on Jekyll's site)
+  defaults:
+    -
+      scope:
+        path: ""
+        type: "posts"
+      values:
+        layout: "post"
+        comments: true  # add comments to all blog posts
+        social-share: true # add social media sharing buttons to all blog posts
+    -
+      scope:
+        path: "" # any file that's not a post will be a "page" layout by default
+      values:
+        layout: "page"
+
+  # Exclude these files from production site
+  exclude:
+    - CHANGELOG.md
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - screenshot.png
+    - docs/
+
+  plugins:
+    - jekyll-paginate
+    - jekyll-sitemap
+
+

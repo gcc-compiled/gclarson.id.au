@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    
+    <title>The Cyber Necronomicon</title>
+    
+    
+    <description>This website is a virtual proof that I'm awesome</description>
+    
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>./helloWorld.sh</title>
+        <description>
+          Yet Another InfoSec Blog Poster - 
+          Hello World! My first ever post using the beautiful-jekyll theme and gitpages setup! Why U do dis? Yet another Cyber Security Blog… I know. But I am hoping that posting the random shit I do can also intice the reader a little longer and be a little more engaged. Basically,...
+        </description>
+        <pubDate>Mon, 14 Dec 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2020-12-14-helloWorld/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-12-14-helloWorld/</guid>
+      </item>
+    
+      <item>
+        <title>Sample blog post test</title>
+        <description>
+          Each post also has a subtitle - 
+          This is a demo post to show you how to write blog posts with markdown. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text Here is a secondary...
+        </description>
+        <pubDate>Fri, 28 Feb 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2020-02-28-test-markdown/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-02-28-test-markdown/</guid>
+      </item>
+    
+  </channel>
+</rss>
