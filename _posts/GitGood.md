@@ -2,10 +2,7 @@
 layout: post
 title: GitGood
 subtitle: Basic Knowledge Dump of Git and Github
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
 tags: [git, github]
-comments: false
 ---
 
 This is just some testing grounds on understanding, utilising and getting better at Git. This is something I have been trying to do for a while so why not use it as a testing ground, but also share some notes.
