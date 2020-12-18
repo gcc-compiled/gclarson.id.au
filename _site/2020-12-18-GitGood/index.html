@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 5.0.0 | Copyright Dean Attali 2020 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  <title>Gitgood</title>
+
+  
+  <meta name="author" content="Gareth Clarson (a.k.a gcc_compiled)">
+  
+
+  <meta name="description" content="Git Good This is just some testing grounds on understanding, utilising and getting better at Git. This is something I have been trying to do for a while so why not use it as a testing ground, but also share some notes. I dont really like the idea of “those...">
+
+  
+
+  
+  <meta name="keywords" content="CTF,CaptureTheFlag,TryHackMe,HackTheBox,">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="The Cyber Necronomicon" href="/feed.xml">
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="The Cyber Necronomicon">
+  <meta property="og:title" content="Gitgood">
+  <meta property="og:description" content="Git Good This is just some testing grounds on understanding, utilising and getting better at Git. This is something I have been trying to do for a while so why not use it as a testing ground, but also share some notes. I dont really like the idea of “those...">
+
+  
+  <meta property="og:image" content="/assets/img/Avatars/Main-TV.gif">
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="Gareth Clarson (a.k.a gcc_compiled)">
+  <meta property="og:article:published_time" content="2020-12-18T00:00:00+08:00">
+  <meta property="og:url" content="/2020-12-18-GitGood/">
+  <link rel="canonical" href="/2020-12-18-GitGood/">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:site" content="@gcc_compiled">
+  <meta name="twitter:creator" content="@gcc_compiled">
+
+  <meta property="twitter:title" content="Gitgood">
+  <meta property="twitter:description" content="Git Good This is just some testing grounds on understanding, utilising and getting better at Git. This is something I have been trying to do for a while so why not use it as a testing ground, but also share some notes. I dont really like the idea of “those...">
+
+  
+  <meta name="twitter:image" content="/assets/img/Avatars/Main-TV.gif">
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="">The Cyber Necronomicon</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutme">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/writeups">Write Ups</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ctfhistory">CTF History</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+                  <a class="dropdown-item" href="https://www.markdowntutorial.com/">Learn markdown</a>
+            </div>
+          </li>
+        </ul>
+  </div>
+
+  
+
+  
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/Avatars/Main-TV.gif" />
+        </a>
+      </div>
+    </div>
+  
+
+</nav>
+
+
+  <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="post-heading">
+          <h1>Gitgood</h1>
+          
+
+          
+            <span class="post-meta">Posted on December 18, 2020</span>
+            
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class=" container-md ">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+
+      
+
+      
+
+      <article role="main" class="blog-post">
+        <h1 id="git-good">Git Good</h1>
+<p>This is just some testing grounds on understanding, utilising and getting better at Git. This is something I have been trying to do for a while so why not use it as a testing ground, but also share some notes.</p>
+
+<p>I dont really like the idea of “those who can’t do, teach”, because for me I solidify and reaffirm my knowledge or even learn more by teaching or sharing my info with others. It opens an important dialoge if I am wrong so I can understand where my knowledge is gapping, so if there is something not true within this repo please PM me or let me know!</p>
+
+<h1 id="what-is-it-git-for">What is it Git for?</h1>
+
+<ul>
+  <li>Git is used primarily for version control.</li>
+  <li>It is very common in the programming community, however it is not just for programming.</li>
+  <li>Most businesses have pretty messy version control, and Git can help with it. However you can do a lot of this with a solution like DropBox, OneDrive, Sharepoint all have their own way of version control.</li>
+</ul>
+
+<h1 id="is-using-github-gitting-good">Is Using GitHub Gitting Good?</h1>
+
+<p>Not really there are some key differences that should be known in understanding what you can do and why they are related.
+For example:</p>
+<ul>
+  <li>Git is the software itself, it has its own commands and usually contained within a CLI type environment with vary little sharing capabilities.</li>
+  <li>GitHub is a web service used for not only hosting files in the same way Git creates and manages files, but also in more of a GUI and beginner friendly way. This is also used as a sharing platform between users to share projects they have made.</li>
+</ul>
+
+<h1 id="terminology">Terminology</h1>
+<p>Some good terminology to know when understanding, communicating and using Git or GitHub</p>
+<ul>
+  <li>Repository (a.k.a “Repo”): A repository of files containing a specific project</li>
+  <li>README File: Is a file that is often used in GitHub to give a blurb in markdown what the project is about.</li>
+  <li>Commit: essentially a “Save Button” for files, one a commit has been performed a Hash is generated that will uniquely identify a version change</li>
+  <li>Branch: A branch is essentially an experiment of code that is in parallell but seperate to the Master. Its mostly used to try new code and see if new techniques would work without affecting the master. Very affective for large repositories or collaborative projects and patching.</li>
+  <li>Master: A default name for the main linear list of changes within a repository.</li>
+  <li>Merge: is a request to have all the commited changes made within a branch, and make it part of another branch, most commonly used to merge back to Master. This can also be utilised to merge a series of branches together into a single branch.</li>
+  <li>Fetch: is a request to grab all of the history information within a branch, it is commonly used along with Merge by either utilising a Pull request or another workflow.</li>
+  <li>Fork: Creates a duplicate of a repository as a whole from one account to your local account.</li>
+  <li>Pull Request: Is a combination of Fetch and Merge requests, essentially a shortcut instead of fetching then merging all the time. Pull == Fetch + Merge. In the context of a repo that was forked, a Pull requests is asking the original owner of the repository to merge your changes from your local repo to theirs.</li>
+  <li>Push Request: is used to transfer commits from your local repository to a remote repository like a central server or GitHub</li>
+</ul>
+
+
+      </article>
+
+      
+
+      
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+
+  
+    <a href="https://twitter.com/intent/tweet?text=Gitgood&url=%2F2020-12-18-GitGood%2F"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  
+
+  
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2020-12-18-GitGood%2F"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fab fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  
+
+  
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2F2020-12-18-GitGood%2F"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  
+
+  
+
+</section>
+
+
+
+      
+
+      <ul class="pagination blog-pager">
+        
+        <li class="page-item previous">
+          <a class="page-link" href="/2020-12-14-helloWorld/" data-toggle="tooltip" data-placement="top" title="./helloWorld.sh">&larr; Previous Post</a>
+        </li>
+        
+        
+      </ul>
+      
+  
+  
+  
+
+  
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <ul class="list-inline text-center footer-links"><li class="list-inline-item">
+    <a href="/feed.xml" title="RSS">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">RSS</span>
+    </a>
+  </li><li class="list-inline-item">
+    <a href="https://github.com/gcc-compiled" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://twitter.com/gcc_compiled" title="Twitter">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Twitter</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://linkedin.com/in/gareth-clarson" title="LinkedIn">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">LinkedIn</span>
+   </a>
+  </li></ul>
+
+      
+      <p class="copyright text-muted">
+      
+        Gareth Clarson (a.k.a gcc_compiled)
+        &nbsp;&bull;&nbsp;
+      
+      2020
+
+      
+
+      
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>
