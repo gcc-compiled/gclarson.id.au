@@ -3,8 +3,7 @@ layout: post
 title: ./helloWorld.sh
 subtitle: Yet Another InfoSec Blog Poster
 cover-img: /assets/img/Banner Images/Expect Us.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/Banner Images/Expect Us.jpg
 tags: [misc, test]
 ---
 
