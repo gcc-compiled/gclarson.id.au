@@ -12,6 +12,17 @@
     
     
       <item>
+        <title>./GitGood</title>
+        <description>
+          Basic Knowledge Dump of Git and Github - 
+          This is just some testing grounds on understanding, utilising and getting better at Git. This is something I have been trying to do for a while so why not use it as a testing ground, but also share some notes. I dont really like the idea of “those who can’t...
+        </description>
+        <pubDate>Fri, 18 Dec 2020 00:00:00 +0800</pubDate>
+        <link>/2020-12-18-GitGood/</link>
+        <guid isPermaLink="true">/2020-12-18-GitGood/</guid>
+      </item>
+    
+      <item>
         <title>./helloWorld.sh</title>
         <description>
           Yet Another InfoSec Blog Poster - 
@@ -20,17 +31,6 @@
         <pubDate>Mon, 14 Dec 2020 00:00:00 +0800</pubDate>
         <link>/2020-12-14-helloWorld/</link>
         <guid isPermaLink="true">/2020-12-14-helloWorld/</guid>
-      </item>
-    
-      <item>
-        <title>Sample blog post test</title>
-        <description>
-          Each post also has a subtitle - 
-          This is a demo post to show you how to write blog posts with markdown. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text Here is a secondary...
-        </description>
-        <pubDate>Fri, 28 Feb 2020 00:00:00 +0800</pubDate>
-        <link>/2020-02-28-test-markdown/</link>
-        <guid isPermaLink="true">/2020-02-28-test-markdown/</guid>
       </item>
     
   </channel>
