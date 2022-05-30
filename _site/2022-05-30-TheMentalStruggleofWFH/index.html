@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 5.0.0 | Copyright Dean Attali 2020 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  <title>The Mental Struggle of WFH</title>
+
+  
+  <meta name="author" content="Gareth Clarson (a.k.a gcc_compiled)">
+  
+
+  <meta name="description" content="The Mental Struggle of WFH and overcomming lazyness and the Sarlacc pit of despair">
+
+  
+
+  
+  <meta name="keywords" content="CTF,CaptureTheFlag,TryHackMe,HackTheBox,">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="The Cyber Necronomicon" href="http://localhost:4000/feed.xml">
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="The Cyber Necronomicon">
+  <meta property="og:title" content="The Mental Struggle of WFH">
+  <meta property="og:description" content="The Mental Struggle of WFH and overcomming lazyness and the Sarlacc pit of despair">
+
+  
+  <meta property="og:image" content="http://localhost:4000/assets/img/Article%20Images/SarlaccPit.jpg">
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="Gareth Clarson (a.k.a gcc_compiled)">
+  <meta property="og:article:published_time" content="2022-05-30T16:00:00+08:00">
+  <meta property="og:url" content="http://localhost:4000/2022-05-30-TheMentalStruggleofWFH/">
+  <link rel="canonical" href="http://localhost:4000/2022-05-30-TheMentalStruggleofWFH/">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:site" content="@gcc_compiled">
+  <meta name="twitter:creator" content="@gcc_compiled">
+
+  <meta property="twitter:title" content="The Mental Struggle of WFH">
+  <meta property="twitter:description" content="The Mental Struggle of WFH and overcomming lazyness and the Sarlacc pit of despair">
+
+  
+  <meta name="twitter:image" content="http://localhost:4000/assets/img/Article%20Images/SarlaccPit.jpg">
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="http://localhost:4000/">The Cyber Necronomicon</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutme">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/writeups">Write Ups</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ctfhistory">CTF History</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+                  <a class="dropdown-item" href="https://www.markdowntutorial.com/">Learn markdown</a>
+            </div>
+          </li>
+        </ul>
+  </div>
+
+  
+
+  
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="http://localhost:4000/">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/Avatars/Main-TV.gif">
+        </a>
+      </div>
+    </div>
+  
+
+</nav>
+
+
+  <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+  <div id="header-big-imgs" data-num-img="1" data-img-src-1="http://localhost:4000/assets/img/Article%20Images/SarlaccPit.jpg"></div>
+
+
+<header class="header-section has-img">
+
+<div class="big-img intro-header">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="post-heading">
+          <h1>The Mental Struggle of WFH</h1>
+          
+            
+              <h2 class="post-subheading">The Mental Struggle of WFH and overcomming lazyness and the Sarlacc pit of despair</h2>
+            
+          
+
+          
+            <span class="post-meta">Posted on May 30, 2022</span>
+            
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="img-desc"></span>
+</div>
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="post-heading">
+          <h1>The Mental Struggle of WFH</h1>
+          
+            
+              <h2 class="post-subheading">The Mental Struggle of WFH and overcomming lazyness and the Sarlacc pit of despair</h2>
+            
+          
+
+          
+            <span class="post-meta">Posted on May 30, 2022</span>
+            
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class=" container-md ">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+
+      
+
+      
+
+      <article role="main" class="blog-post">
+        <h2 id="the-mental-struggle-of-wfh-and-overcomming-the-pit-of-dispair">The Mental Struggle of WFH and Overcomming the Pit of Dispair</h2>
+<p><img src="/assets/img/Article%20Images/Working%20in%20Office.jpg" alt="Cool Image"></p>
+
+<p>Where you smashing out work for 12hours a day straight, felt like you were on a tredmill at equal pace to Usain Bolt during the 100m in 2014 and then all of a sudden you got hit with the spicy cough and subject to the WFH lifestyle of all-day PJ’s and taking your meetings in your bed so you could go back to sleep straight after?</p>
+
+<p>During covid and all the lockdowns in Australia, I saw lots of people around me become victim of this mindset (myself included). We spent all this time going to work at a certain time, pushing out deadlines, lunch and meetings everything at a certain time and come home to our relaxing spot on the couch to watch a few eps of your favourite youtuber DC Cybersec. Now your day is set to a 4 step phase: wake up and literally roll out of bed onto the computer, maybe eat something, watch youtube shorts for 8hours, back to bed.</p>
+
+<p>Initially the work-from-home was okay, however as the days progressed, time kept slipping and you slowly forget what time it was or even the day.</p>
+
+<p>How can you overcome this? do you even know you are in this spicy cough pit Sarlacc of despair? 
+I am here to say: <strong>you are NOT alone</strong>, and to give you some tips on what helped me and hopefully will help you pull yourself out, regardless of the mitochondria count in your blood.</p>
+
+<p>The main tip that is; it is important that you keep to what makes <em>you</em> happy, its very hard especially when you are the kind of person that does things for other people on a regular basis. Remember that keyword <strong>YOU</strong>.</p>
+
+<h2 id="steps-to-climb-out-of-the-sarlaccs-mouth">Steps to climb out of the Sarlacc’s Mouth</h2>
+<p>So, how can one overcome this mindset and get back to their overworked productive self?</p>
+
+<p>Some tips I have learnt my time in isolation and working from home for about 6 months now:</p>
+
+<p><strong>Tip 1: Walk somewhere for a minimum of 30mins</strong></p>
+<ul>
+  <li>
+    <p>Im serious, I am not really a physical person by anymeans, heck my nick name for my friends in discord is “The Dad Bod God”. But I <strong>cannot</strong> stress enough how important it is for you to look at something other than a screen.</p>
+  </li>
+  <li>
+    <p>Like plants, we humans benefit from a bit of photosynthesis!</p>
+  </li>
+</ul>
+
+<p><strong>Tip 2: Wake up the same time you would normally to go to work and go to sleep like you normally would.</strong> (barring maybe 15mins if you commute an hour or more usually).</p>
+
+<ul>
+  <li>
+    <p>After some experimenting, my body naturally gets tired around 11pm, and then I would usually fall asleep after 30-60mins.</p>
+  </li>
+  <li>
+    <p>My body usually wakes up around 10am without an alarm, and really thats just not good. Set that alarm for 7:30am buddy, and get into the morning routine to start the day by 8:00am.</p>
+  </li>
+  <li>
+    <p>Do this for a full week in conjunction with walking 30mins youll feel good and it will get easier to wake up.</p>
+  </li>
+</ul>
+
+<p><strong>Tip 3: Get dressed in actual fuckn clothes.</strong></p>
+
+<ul>
+  <li>
+    <p>none of this <em>im in my jammieesss</em> bullshit, shave or put on some make up, some good smelling dioderant or cologne like you normally would for work.</p>
+  </li>
+  <li>
+    <p>Now if you are only going to work in thousand dollar suits you can do this but damn whose gonna see you wear it, just go business casual fridays or something… just put some fuckn clothes on!</p>
+  </li>
+</ul>
+
+<p><strong>Tip 4: When you get up and get dressed, put your shoes on..</strong></p>
+
+<ul>
+  <li>
+    <p>I know this seems really strange but I have had such a switch in mentality since I started doing this, I am more prepared for the day and can focus better.</p>
+
+    <p><strong>Why is this??</strong></p>
+  </li>
+  <li>
+    <p>I put it down to one single reason, you put your shoes on to go and do something, your body applies enough energy for you to do the day, its an inbuilt signal we have had since we were children. INSTANT ENERGY BOOST HACK!</p>
+  </li>
+</ul>
+
+<p><strong>Tip 5: Start and finish work like you normally would</strong></p>
+
+<ul>
+  <li>Yes you dont have to commute, yes nobody is watching you (likely) but that doesnt mean you can slack off. If you started at 9am, get up at 8 spend an hour getting ready and making breakfast, if you finish at 5 then finish at 5 and whip out that controller or turn off the machines.</li>
+</ul>
+
+<p><strong>Tip 6: Have a queue that work is done and its time for play mode.</strong></p>
+<ul>
+  <li>Whats that thing you do as soon as you get home from work? is it a pants down party as soon as you walk in? turn on the consoles and listen to the soothing noise of the bootup sequence? Whatever it may be, do that, but ONLY when your work time is done.</li>
+</ul>
+
+<p><strong>Tip 7: Keep your workspace de-cluttered and clean by the end of the day</strong></p>
+<ul>
+  <li>This is the same as you would at work, you may get it messy with some stuff and papers around but clean the workspace for a clean new day.</li>
+</ul>
+
+<p><strong>Tip 8:Spend time with someone outside of the screen</strong></p>
+<ul>
+  <li>This is a reminder to call your damn mother, father or grandmother! they would love to hear from you. Or just chat with someone, not via text, play games or watch a movie together, we dont have lockdowns as much anymore (if any) so go and socialise like you normally would you can only benefit from this.</li>
+</ul>
+
+<h2 id="newgame">NewGame+</h2>
+<p>This one is for peeps who want a bit of routine in their day or think they wanna take it to the next level. I will create a new blog post with tidbits of info for the more advanced trying to get 100% achievements in order to spot this being a fuckn book.</p>
+
+<h2 id="tldr">TLDR;</h2>
+
+<p>I was gone, and now im back, gonna do some more content on here and post hopefully some helpful tips or walkthroughs!</p>
+
+<h1 id="disclaimer">Disclaimer</h1>
+<p><em>Disclaimer: I am in no way a health professional, Doctor or the like, I am a person who have gone through an issue, found a way to help push through it and thought it would be beneficial to others to share how I am doing it. You do not have to do all of the tips or even any of them, I understand everyone is different in their own special way and does/affects things differently. Please also keep in mind that I am different too and would appreciate the same understanding as I give.</em></p>
+
+      </article>
+
+      
+        <div class="blog-tags">
+          <span>Tags:</span>
+          
+            <a href="/tags#Mental%20Health">Mental Health</a>
+          
+            <a href="/tags#lifestyle">lifestyle</a>
+          
+        </div>
+      
+
+      
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+<section id="social-share-section">
+  <span class="sr-only">Share: </span>
+
+  
+    <a href="https://twitter.com/intent/tweet?text=The+Mental+Struggle+of+WFH&amp;url=http%3A%2F%2Flocalhost%3A4000%2F2022-05-30-TheMentalStruggleofWFH%2F" class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  
+
+  
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2022-05-30-TheMentalStruggleofWFH%2F" class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fab fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  
+
+  
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2022-05-30-TheMentalStruggleofWFH%2F" class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  
+
+  
+
+</section>
+
+
+
+      
+
+      <ul class="pagination blog-pager">
+        
+        <li class="page-item previous">
+          <a class="page-link" href="/2022-05-30-WhereTheHell/" data-toggle="tooltip" data-placement="top" title="Necronomicon Revived!">← Previous Post</a>
+        </li>
+        
+        
+      </ul>
+      
+  
+  
+  
+
+  
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <ul class="list-inline text-center footer-links">
+<li class="list-inline-item">
+    <a href="/feed.xml" title="RSS">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">RSS</span>
+    </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://github.com/gcc-compiled" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://twitter.com/gcc_compiled" title="Twitter">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Twitter</span>
+   </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://linkedin.com/in/gareth-clarson" title="LinkedIn">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">LinkedIn</span>
+   </a>
+  </li>
+</ul>
+
+      
+      <p class="copyright text-muted">
+      
+        Gareth Clarson (a.k.a gcc_compiled)
+         • 
+      
+      2022
+
+      
+
+      
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>

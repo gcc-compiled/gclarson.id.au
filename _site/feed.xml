@@ -5,21 +5,43 @@
     <title>The Cyber Necronomicon</title>
     
     
-    <description>This website is a virtual proof that I'm awesome</description>
+    <description>Who the hell reads RSS feeds?</description>
     
-    <link></link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
-        <title>./GitGood</title>
+        <title>The Mental Struggle of WFH</title>
+        <description>
+          The Mental Struggle of WFH and overcomming lazyness and the Sarlacc pit of despair - 
+          The Mental Struggle of WFH and Overcomming the Pit of Dispair Where you smashing out work for 12hours a day straight, felt like you were on a tredmill at equal pace to Usain Bolt during the 100m in 2014 and then all of a sudden you got hit with the...
+        </description>
+        <pubDate>Mon, 30 May 2022 16:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022-05-30-TheMentalStruggleofWFH/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022-05-30-TheMentalStruggleofWFH/</guid>
+      </item>
+    
+      <item>
+        <title>Necronomicon Revived!</title>
+        <description>
+          Where the hell have I been? - 
+          Well it’s been almost 2 years since I last did a post, or even blown the dust of this old necronomicon… Why? Overall it can be summed up in one word: Life Life Summed Up As with anything in life, you build a set of hobbies and activities, and each...
+        </description>
+        <pubDate>Mon, 30 May 2022 14:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022-05-30-WhereTheHell/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022-05-30-WhereTheHell/</guid>
+      </item>
+    
+      <item>
+        <title>Git Good</title>
         <description>
           Basic Knowledge Dump of Git and Github - 
           This is just some testing grounds on understanding, utilising and getting better at Git. This is something I have been trying to do for a while so why not use it as a testing ground, but also share some notes. I dont really like the idea of “those who can’t...
         </description>
         <pubDate>Fri, 18 Dec 2020 00:00:00 +0800</pubDate>
-        <link>/2020-12-18-GitGood/</link>
-        <guid isPermaLink="true">/2020-12-18-GitGood/</guid>
+        <link>http://localhost:4000/2020-12-18-GitGood/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-12-18-GitGood/</guid>
       </item>
     
       <item>
@@ -29,8 +51,8 @@
           Hello World! My first ever post using the beautiful-jekyll theme and gitpages setup! Why U do dis? Yet another Cyber Security Blog… I know. But I am hoping that posting the random shit I do can also intice the reader a little longer and be a little more engaged. Basically,...
         </description>
         <pubDate>Mon, 14 Dec 2020 00:00:00 +0800</pubDate>
-        <link>/2020-12-14-helloWorld/</link>
-        <guid isPermaLink="true">/2020-12-14-helloWorld/</guid>
+        <link>http://localhost:4000/2020-12-14-helloWorld/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-12-14-helloWorld/</guid>
       </item>
     
   </channel>

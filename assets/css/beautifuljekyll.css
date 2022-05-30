@@ -429,6 +429,7 @@ footer .footer-custom-content {
   padding: 1.25rem 0;
   border-bottom: 1px solid #eee;
   overflow: hidden;
+  
 }
 
 @media (min-width: 768px) {
@@ -579,6 +580,12 @@ footer .footer-custom-content {
   .post-preview .blog-tags {
     margin-top: 0.625rem;
   }
+}
+
+
+/* Post Content Styling */
+.post-content {
+  text-align: Justify;
 }
 
 /* Tags page */
